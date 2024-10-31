@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stammering Cure Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .technique {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stammering Cure Techniques</h1>
+    <p>Learn practical techniques to overcome stammering.</p>
+</header>
+
+<div class="container">
+    <h2>Welcome!</h2>
+    <p>This website provides techniques and methods to help with stammering. Browse through the techniques below and try them yourself.</p>
+
+    <div class="technique">
+        <h3>Technique 1: Breathing Exercises</h3>
+        <p>Practice deep breathing to calm your mind and control speech. This can help reduce stammering by focusing on a steady rhythm.</p>
+        <button onclick="showDetails('breathing')">Show Details</button>
+        <p id="breathing" style="display:none;">Breathe in deeply through your nose, hold for a few seconds, then exhale slowly. Repeat several times.</p>
+    </div>
+
+    <div class="technique">
+        <h3>Technique 2: Slow Speaking</h3>
+        <p>Slowing down your speech can allow you to better control your words and reduce stammering.</p>
+        <button onclick="showDetails('slowSpeaking')">Show Details</button>
+        <p id="slowSpeaking" style="display:none;">Try to speak one word at a time and take small pauses between phrases. Gradually increase your speed as you feel comfortable.</p>
+    </div>
+
+    <div class="technique">
+        <h3>Technique 3: Positive Visualization</h3>
+        <p>Visualize yourself speaking confidently. This can help reduce anxiety and boost confidence.</p>
+        <button onclick="showDetails('visualization')">Show Details</button>
+        <p id="visualization" style="display:none;">Close your eyes, picture yourself speaking fluently, and focus on that positive image before you speak.</p>
+    </div>
+
+</div>
+
+<script>
+    function showDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
